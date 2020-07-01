@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* --- APRESENTATION --- */
+
+section.apresentation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+  background-color: #000000;
+  color: #E4FF41;
+}
+
+section.apresentation > div.content {
+  width: 100%;
+  max-width: 1078px;
+}
+
+/* APRESENTATION HEADER */
+
+section.apresentation > div.content > header.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.apresentation > div.content > header.header > p.who {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  max-width: 184px;
+}
+
+section.apresentation > div.content > header.header > ul.languages {
+  list-style: none;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+}
+
+section.apresentation > div.content > header.header > ul.languages > li.language_label {
+  display: inline;
+}
+
+/* APRESENTATION CONTENT */
+
+section.apresentation > div.content > div.apresentation_content {
+  display: flex;
+  align-items: stretch;
+}
+
+section.apresentation > div.content > div.apresentation_content > h1.page_title {
+  position: relative;
+  font-family: 'Krona One', sans-serif;
+  font-size: 144px;
+  line-height: 1.02em;
+  text-transform: uppercase;
+  left: -12px;
+  margin-bottom: -12px;
+}
+
+section.apresentation > div.content > div.apresentation_content > div.page_description_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 32px;
+}
+
+section.apresentation > div.content > div.apresentation_content > div.page_description_wrapper > p.page_description {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  line-height: 140%;
+  text-transform: lowercase;
+}
+
+section.apresentation > div.content > div.apresentation_content > div.page_description_wrapper > a {
+  font-family: 'Roboto Mono', monospace;
+  color: #E4FF41;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+/* APRESENTATION INFORMATION SOURCE */
+
+section.apresentation > div.content > p.information_source {
+  margin-top: 32px;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* --- BRAZIL COVID DATA --- */
+
+section.brazil_covid_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 16px;
+  background-color: #181818;
+  color: #FFFFFF;
+}
+
+section.brazil_covid_data > div.content {
+  width: 100%;
+  max-width: 1078px;
+}
+
+section.brazil_covid_data > div.content > header.header {
+  padding-bottom: 48px;
+  border-bottom: solid 3px #FFFFFF;
+}
+
+section.brazil_covid_data > div.content > header.header > img {
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+
+section.brazil_covid_data > div.content > header.header > div.title_wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+section.brazil_covid_data > div.content > header.header > div.title_wrapper > h2.title {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 16px;
+}
+
+section.brazil_covid_data > div.content > header.header > div.title_wrapper > p.updated {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+section.brazil_covid_data > div.content > .days_without_minister {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+section.brazil_covid_data > div.content > .days_without_minister > .number {
+  font-family: Krona One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 240px;
+  line-height: 300px;
+  text-align: center;
+  letter-spacing: -0.1em;
+  color: #E4FF41;
+  vertical-align: middle;
+}
+
+section.brazil_covid_data > div.content > .days_without_minister > .text {
+  display: inline-block;
+  max-width: 366px;
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 42px;
+  color: #E4FF41;
+  vertical-align: middle;
+  margin-left: 32px;
+  text-align: left;
+}
+
+section.brazil_covid_data > div.content > div.global_data {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.brazil_covid_data > div.content > div.global_data > div.data {
+  text-align: center;
+}
+
+section.brazil_covid_data > div.content > div.global_data > div.data > span.number {
+  font-family: Krona One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: -0.1em;
+}
+
+section.brazil_covid_data > div.content > div.global_data > div.data > p.text {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+
+/* --- GLOBAL COVID DATA --- */
+
+section.global_covid_data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px 16px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+section.global_covid_data > div.content {
+  width: 100%;
+  max-width: 1078px;
+}
+
+section.global_covid_data > div.content > header.header {
+  padding-bottom: 48px;
+  border-bottom: solid 3px #FFFFFF;
+}
+
+section.global_covid_data > div.content > header.header > img {
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+section.global_covid_data > div.content > header.header > div.title_wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+section.global_covid_data > div.content > header.header > div.title_wrapper > h2.title {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 16px;
+}
+
+section.global_covid_data > div.content > header.header > div.title_wrapper > p.updated {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 0px;
+}
+
+section.global_covid_data > div.content > div.global_data {
+  display: flex;
+  justify-content: space-between;
+}
+
+section.global_covid_data > div.content > div.global_data > div.data {
+  text-align: center;
+}
+
+section.global_covid_data > div.content > div.global_data > div.data > span.number {
+  font-family: Krona One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 1em;
+  text-align: center;
+  letter-spacing: -0.1em;
+}
+
+section.global_covid_data > div.content > div.global_data > div.data > p.text {
+  font-family: Roboto Mono;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
