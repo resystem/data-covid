@@ -53,7 +53,7 @@ const IndexPage = () => {
       <section className="brazil_covid_data">
         <div className="content">
           <header className="header">
-            <img src="/icons/brazil-white.svg" alt="Brazil`s white icon" />
+            <img src="/images/brazil-white.svg" alt="Brazil`s white icon" />
             <div className="title_wrapper">
               <h2 className="title">{t('current_brazil_situation')}</h2>
               <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p>
@@ -66,7 +66,7 @@ const IndexPage = () => {
       <section className="global_covid_data">
         <div className="content">
           <header className="header">
-            <img src="/icons/global-black.svg" alt="Global`s black icon" />
+            <img src="/images/global-black.svg" alt="Global`s black icon" />
             <div className="title_wrapper">
               <h2 className="title">{t('current_global_situation')}</h2>
               <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p>
@@ -75,6 +75,13 @@ const IndexPage = () => {
           <GeneralData deaths={56320} cases={730324} recovered={256230} />
         </div>
       </section>
+      <footer>
+        <h3>
+          {t('developed_by')}
+          &nbsp;
+          <a href="https://www.instagram.com/_resystem">Re/System</a>
+        </h3>
+      </footer>
     </Layout>
   );
 };

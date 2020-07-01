@@ -7,6 +7,8 @@
   "access_information": "informacion de acceso",
   "information_source": "Fuente de información",
   "current_brazil_situation": "situación actual del Covid-19 en Brasil",
-  "days_without_minister": "sin <1>ministro</1> <3>de salud</3>",
-  "current_global_situation": "situación actual de Covid-19 en el resto del mundo"
+  "days_without_minister": "dias <1>sin</1> <3>ministro de salud</3>",
+  "current_global_situation": "situación actual de Covid-19 en el resto del mundo",
+  "developed_by": "Desarrollado por" 
+
 }
