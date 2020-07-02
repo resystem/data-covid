@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import i18n from '../libs/i18n';
 import { useTranslation } from 'react-i18next';
-import SmoothScroll from 'smooth-scroll';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import DaysWithoutMinister from '../components/DaysWithoutMinister';
@@ -74,9 +74,7 @@ const IndexPage = () => {
                 href="/"
                 onClick={(e) => {
                   e.preventDefault();
-                  const scroll = new SmoothScroll();
-                  const anchor = document.querySelector('#brazil-covid-data');
-                  scroll.animateScroll(anchor);
+                  scrollTo('#brazil-covid-data');
                 }}
               >
                 {t('access_information')}
