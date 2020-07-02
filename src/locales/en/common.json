@@ -1,13 +1,16 @@
 {
-  "pt": "pt",
-  "es": "es",
-  "en": "en",
+  "pt": "por",
+  "es": "spa",
+  "en": "eng",
   "apresentation": "342 and Midia NINJA presents",
   "page_description": "For every sigle day without a health minister, the death toll increases in Brazil. The numbers don't lie and we're here to show them.",
   "access_information": "access information",
   "information_source": "Information source",
-  "current_brazil_situation": "situación actual del Covid-19 en Brazil",
+  "current_brazil_situation": "current Covid-19 situation in Brazil",
   "days_without_minister": "days <1>without</1> a <3>health minister</3>",
-  "current_global_situation": "situación actual del Covid-19 in the world",
-  "developed_by": "Developed by" 
+  "current_global_situation": "current Covid-19 situation in the world",
+  "developed_by": "Developed by",
+  "deaths": "deaths",
+  "infecteds": "infecteds",
+  "recovered": "recovered"
 }

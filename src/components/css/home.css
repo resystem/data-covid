@@ -37,6 +37,11 @@ section.apresentation > div.content > header.header > ul.languages {
 
 section.apresentation > div.content > header.header > ul.languages > li.language_label {
   display: inline;
+  cursor: pointer;
+}
+
+section.apresentation > div.content > header.header > ul.languages > li.language_label.__active {
+  font-weight: bold;
 }
 
 /* APRESENTATION CONTENT */
