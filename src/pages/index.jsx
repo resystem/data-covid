@@ -21,6 +21,7 @@ const IndexPage = () => {
   useEffect(() => {
     axios.get('/data').then((data) => {
       console.log(data);
+      console.log(data);
     });
   }, []);
 
