@@ -23,14 +23,14 @@ exports.onCreateDevServer = ({ app }) => {
         global_cases: {
           confirmed: parseInt(globalColumns[0].textContent.replace(/[.]/g, ''), 10),
           per_million: parseInt(globalColumns[2].textContent.replace(/[.]/g, ''), 10),
-          recovered: parseInt(globalColumns[2].textContent.replace(/[.]/g, ''), 10),
-          deaths: parseInt(globalColumns[3].textContent.replace(/[.]/g, ''), 10),
+          recovered: parseInt(globalColumns[3].textContent.replace(/[.]/g, ''), 10),
+          deaths: parseInt(globalColumns[4].textContent.replace(/[.]/g, ''), 10),
         },
         brazil_cases: {
           confirmed: parseInt(brazilColumns[0].textContent.replace(/[.]/g, ''), 10),
           per_million: parseInt(brazilColumns[2].textContent.replace(/[.]/g, ''), 10),
-          recovered: parseInt(brazilColumns[2].textContent.replace(/[.]/g, ''), 10),
-          deaths: parseInt(brazilColumns[3].textContent.replace(/[.]/g, ''), 10),
+          recovered: parseInt(brazilColumns[3].textContent.replace(/[.]/g, ''), 10),
+          deaths: parseInt(brazilColumns[4].textContent.replace(/[.]/g, ''), 10),
         },
       }
     });

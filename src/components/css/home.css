@@ -46,8 +46,6 @@ section.apresentation > div.content > header.header > ul.languages > li.language
 
 /* APRESENTATION CONTENT */
 
-section.apresentation > div.content > div.apresentation_content {}
-
 section.apresentation > div.content > div.apresentation_content > h1.page_title {
   position: relative;
   font-family: 'Krona One', sans-serif;
@@ -103,7 +101,7 @@ section.brazil_covid_data > div.content {
 }
 
 section.brazil_covid_data > div.content > header.header {
-  padding-bottom: 48px;
+  padding-bottom: 32px;
   border-bottom: solid 3px #FFFFFF;
 }
 
@@ -125,6 +123,7 @@ section.brazil_covid_data > div.content > header.header > div.title_wrapper > h2
   font-weight: 300;
   font-size: 30px;
   line-height: 35px;
+  margin-bottom: 0px;
 }
 
 section.brazil_covid_data > div.content > header.header > div.title_wrapper > p.updated {
@@ -204,8 +203,9 @@ section.global_covid_data > div.content {
 }
 
 section.global_covid_data > div.content > header.header {
-  padding-bottom: 48px;
-  border-bottom: solid 3px #FFFFFF;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: solid 3px #000000;
 }
 
 section.global_covid_data > div.content > header.header > img {

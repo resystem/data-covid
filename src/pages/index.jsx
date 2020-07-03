@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import moment from 'moment';
 import i18n from '../libs/i18n';
 import { useTranslation } from 'react-i18next';
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -16,12 +17,12 @@ import '../components/css/home.css';
  */
 const IndexPage = () => {
   const [lang, setLang] = useState('pt');
+  const [data, setData] = useState(null);
   const { t } = useTranslation();
   
   useEffect(() => {
-    axios.get('/data').then((data) => {
-      console.log(data);
-      console.log(data);
+    axios.get('/data').then((response) => {
+      setData(response.data);
     });
   }, []);
 
@@ -102,11 +103,17 @@ const IndexPage = () => {
             <img src={brIcon} alt="Brazil`s white icon" />
             <div className="title_wrapper">
               <h2 className="title">{t('current_brazil_situation')}</h2>
-              <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p>
+              { /* <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p> */ }
             </div>
           </header>
-          <DaysWithoutMinister number={60} />
-          <GeneralData deaths={56320} cases={730324} recovered={256230} />
+          <DaysWithoutMinister
+            number={moment(Date.now()).diff(moment([2020, 4, 15]), 'days')}
+          />
+          <GeneralData
+            deaths={data ? data.brazil_cases.deaths : 0}
+            cases={data ? data.brazil_cases.confirmed : 0}
+            recovered={data ? data.brazil_cases.recovered : 0}
+          />
         </div>
       </section>
       <section className="global_covid_data">
@@ -115,10 +122,14 @@ const IndexPage = () => {
             <img src={globalIcon} alt="Global`s black icon" />
             <div className="title_wrapper">
               <h2 className="title">{t('current_global_situation')}</h2>
-              <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p>
+              { /* <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p> */ }
             </div>
           </header>
-          <GeneralData deaths={56320} cases={730324} recovered={256230} />
+          <GeneralData
+            deaths={data ? data.global_cases.deaths : 0}
+            cases={data ? data.global_cases.confirmed : 0}
+            recovered={data ? data.global_cases.recovered : 0}
+          />
         </div>
       </section>
       <footer>
