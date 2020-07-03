@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import i18n from '../libs/i18n';
 import { useTranslation } from 'react-i18next';
 import scrollTo from 'gatsby-plugin-smoothscroll';
@@ -16,6 +17,13 @@ import '../components/css/home.css';
 const IndexPage = () => {
   const [lang, setLang] = useState('pt');
   const { t } = useTranslation();
+  
+  useEffect(() => {
+    axios.get('/data').then((data) => {
+      console.log(data);
+    });
+  }, []);
+
   return (
     <Layout>
       <SEO title="Home" />
