@@ -65,7 +65,6 @@ section.apresentation > div.content > div.apresentation_content > div.page_descr
   font-family: 'Roboto Mono', monospace;
   font-size: 11px;
   line-height: 140%;
-  text-transform: lowercase;
 }
 
 section.apresentation > div.content > div.apresentation_content > div.page_description_wrapper > a {

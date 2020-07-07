@@ -13,6 +13,8 @@ import brIcon from '../images/brazil-white.svg';
 import globalIcon from '../images/global-black.svg';
 import '../components/css/home.css';
 
+const numberWithCommas = (x, lang) => x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, lang !== 'en' ? '.' : ',');
+
 /**
  * Function that returns Index project page
  */
@@ -116,9 +118,9 @@ const IndexPage = () => {
             number={moment(Date.now()).diff(moment([2020, 4, 15]), 'days')}
           />
           <GeneralData
-            deaths={data ? data.brazil_cases.deaths : 0}
-            cases={data ? data.brazil_cases.confirmed : 0}
-            recovered={data ? data.brazil_cases.recovered : 0}
+            deaths={data ? numberWithCommas(data.brazil_cases.deaths, lang) : 0}
+            cases={data ? numberWithCommas(data.brazil_cases.confirmed, lang) : 0}
+            recovered={data ? numberWithCommas(data.brazil_cases.recovered, lang) : 0}
           />
         </div>
       </section>
@@ -134,9 +136,9 @@ const IndexPage = () => {
             </div>
           </header>
           <GeneralData
-            deaths={data ? data.global_cases.deaths : 0}
-            cases={data ? data.global_cases.confirmed : 0}
-            recovered={data ? data.global_cases.recovered : 0}
+            deaths={data ? numberWithCommas(data.global_cases.deaths, lang) : 0}
+            cases={data ? numberWithCommas(data.global_cases.confirmed, lang) : 0}
+            recovered={data ? numberWithCommas(data.global_cases.recovered, lang) : 0}
           />
         </div>
       </section>

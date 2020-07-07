@@ -1,15 +1,13 @@
 {
   "global_cases": {
     "confirmed": 11647399,
-    "per_million": 1498,
-    "recovered": 1498,
-    "deaths": 6328000
+    "recovered": 6328000,
+    "deaths": 538796
   },
   "brazil_cases": {
     "confirmed": 1628283,
-    "per_million": 7705,
-    "recovered": 7705,
-    "deaths": 1071229
+    "recovered": 1071229,
+    "deaths": 65631
   },
   "updated": "2020-07-07 15:57:00" 
 }
