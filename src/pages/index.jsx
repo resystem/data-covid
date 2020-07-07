@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import DaysWithoutMinister from '../components/DaysWithoutMinister';
 import GeneralData from '../components/GeneralData';
+import covidData from '../data.json';
 import brIcon from '../images/brazil-white.svg';
 import globalIcon from '../images/global-black.svg';
 import '../components/css/home.css';
@@ -21,10 +22,13 @@ const IndexPage = () => {
   const { t } = useTranslation();
   
   useEffect(() => {
-    axios.get('/data').then((response) => {
-      setData(response.data);
-    });
+    console.log(covidData);
+    setData(covidData);
   }, []);
+
+  if (!data) return <div />;
+
+  const updated = moment(data.updated, 'YYYY-MM-DD HH:mm:ss');
 
   return (
     <Layout>
@@ -103,7 +107,9 @@ const IndexPage = () => {
             <img src={brIcon} alt="Brazil`s white icon" />
             <div className="title_wrapper">
               <h2 className="title">{t('current_brazil_situation')}</h2>
-              { /* <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p> */ }
+              <p className="updated">
+                {`ATUALIZADO ${updated.format('DD/MM')}, ÀS ${updated.format('HH:mm')}`}
+              </p>
             </div>
           </header>
           <DaysWithoutMinister
@@ -122,7 +128,9 @@ const IndexPage = () => {
             <img src={globalIcon} alt="Global`s black icon" />
             <div className="title_wrapper">
               <h2 className="title">{t('current_global_situation')}</h2>
-              { /* <p className="updated">ATUALIZADO 23/08, ÀS 21:36</p> */ }
+              <p className="updated">
+                {`ATUALIZADO ${updated.format('DD/MM')}, ÀS ${updated.format('HH:mm')}`}
+              </p>
             </div>
           </header>
           <GeneralData
